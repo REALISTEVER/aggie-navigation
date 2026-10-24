@@ -1,0 +1,650 @@
+{
+  "metadata": {
+    "building": "Engineering Building",
+    "floor": 4,
+    "team": "Team 4",
+    "coordinate_system": "approximate_2d_xy",
+    "cost_unit": "estimated_distance_units",
+    "educational_use_only": true
+  },
+  "nodes": {
+    "F4_STAIR_NORTH": {
+      "label": "F4_STAIR_NORTH",
+      "position": [
+        310,
+        800
+      ],
+      "floor": 4,
+      "accessible": false,
+      "type": "stairs",
+      "neighbors": [
+        {
+          "to": "F4_CORR_NW_END",
+          "distance": 5.0,
+          "accessible": false,
+          "movement_type": "stairs",
+          "travel_time": 5.0,
+          "energy_cost": 5.0,
+          "route_points": []
+        }
+      ],
+      "connector_id": "STAIRS_NORTH_CONN"
+    },
+    "F4_STAIR_MID": {
+      "label": "F4_STAIR_MID",
+      "position": [
+        450,
+        480
+      ],
+      "floor": 4,
+      "accessible": false,
+      "type": "stairs",
+      "neighbors": [
+        {
+          "to": "F4_ATRIUM_CENTER",
+          "distance": 9.5,
+          "accessible": false,
+          "movement_type": "stairs",
+          "travel_time": 9.5,
+          "energy_cost": 9.5,
+          "route_points": []
+        }
+      ],
+      "connector_id": "STAIRS_MID_CONN"
+    },
+    "F4_STAIR_EAST": {
+      "label": "F4_STAIR_EAST",
+      "position": [
+        890,
+        390
+      ],
+      "floor": 4,
+      "accessible": false,
+      "type": "stairs",
+      "neighbors": [
+        {
+          "to": "F4_CORR_EAST_END",
+          "distance": 4.0,
+          "accessible": false,
+          "movement_type": "stairs",
+          "travel_time": 4.0,
+          "energy_cost": 4.0,
+          "route_points": []
+        }
+      ],
+      "connector_id": "STAIRS_EAST_CONN"
+    },
+    "F4_ELEV_1": {
+      "label": "F4_ELEV_1",
+      "position": [
+        570,
+        395
+      ],
+      "floor": 4,
+      "accessible": true,
+      "type": "elevator",
+      "neighbors": [
+        {
+          "to": "F4_CORR_EAST_1",
+          "distance": 4.5,
+          "accessible": true,
+          "movement_type": "elevator",
+          "travel_time": 4.5,
+          "energy_cost": 4.5,
+          "route_points": []
+        }
+      ],
+      "connector_id": "ELEVATOR_MAIN_CONN"
+    },
+    "F4_ELEV_2": {
+      "label": "F4_ELEV_2",
+      "position": [
+        600,
+        395
+      ],
+      "floor": 4,
+      "accessible": true,
+      "type": "elevator",
+      "neighbors": [
+        {
+          "to": "F4_CORR_EAST_1",
+          "distance": 4.5,
+          "accessible": true,
+          "movement_type": "elevator",
+          "travel_time": 4.5,
+          "energy_cost": 4.5,
+          "route_points": []
+        }
+      ],
+      "connector_id": "ELEVATOR_MAIN_CONN"
+    },
+    "F4_CORR_NW_END": {
+      "label": "F4_CORR_NW_END",
+      "position": [
+        290,
+        750
+      ],
+      "floor": 4,
+      "accessible": true,
+      "type": "hallway",
+      "neighbors": [
+        {
+          "to": "F4_STAIR_NORTH",
+          "distance": 5.0,
+          "accessible": false,
+          "movement_type": "stairs",
+          "travel_time": 5.0,
+          "energy_cost": 5.0,
+          "route_points": []
+        },
+        {
+          "to": "F4_CORR_NW_MID",
+          "distance": 14.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 14.0,
+          "energy_cost": 14.0,
+          "route_points": []
+        }
+      ],
+      "connector_id": null
+    },
+    "F4_CORR_NW_MID": {
+      "label": "F4_CORR_NW_MID",
+      "position": [
+        340,
+        620
+      ],
+      "floor": 4,
+      "accessible": true,
+      "type": "hallway",
+      "neighbors": [
+        {
+          "to": "F4_CORR_NW_END",
+          "distance": 14.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 14.0,
+          "energy_cost": 14.0,
+          "route_points": []
+        },
+        {
+          "to": "F4_CORR_SW_BAY",
+          "distance": 18.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 18.0,
+          "energy_cost": 18.0,
+          "route_points": []
+        },
+        {
+          "to": "F4_CORR_DIAG_UPPER",
+          "distance": 12.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 12.0,
+          "energy_cost": 12.0,
+          "route_points": []
+        }
+      ],
+      "connector_id": null
+    },
+    "F4_CORR_SW_BAY": {
+      "label": "F4_CORR_SW_BAY",
+      "position": [
+        260,
+        450
+      ],
+      "floor": 4,
+      "accessible": true,
+      "type": "hallway",
+      "neighbors": [
+        {
+          "to": "F4_CORR_NW_MID",
+          "distance": 18.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 18.0,
+          "energy_cost": 18.0,
+          "route_points": []
+        },
+        {
+          "to": "F4_CORR_SW_CORNER",
+          "distance": 22.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 22.0,
+          "energy_cost": 22.0,
+          "route_points": []
+        }
+      ],
+      "connector_id": null
+    },
+    "F4_CORR_SW_CORNER": {
+      "label": "F4_CORR_SW_CORNER",
+      "position": [
+        290,
+        230
+      ],
+      "floor": 4,
+      "accessible": true,
+      "type": "hallway",
+      "neighbors": [
+        {
+          "to": "F4_CORR_SW_BAY",
+          "distance": 22.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 22.0,
+          "energy_cost": 22.0,
+          "route_points": []
+        },
+        {
+          "to": "F4_CORR_SOUTH_MID",
+          "distance": 9.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 9.0,
+          "energy_cost": 9.0,
+          "route_points": []
+        },
+        {
+          "to": "F4_ATRIUM_WEST",
+          "distance": 18.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 18.0,
+          "energy_cost": 18.0,
+          "route_points": []
+        }
+      ],
+      "connector_id": null
+    },
+    "F4_CORR_SOUTH_MID": {
+      "label": "F4_CORR_SOUTH_MID",
+      "position": [
+        370,
+        190
+      ],
+      "floor": 4,
+      "accessible": true,
+      "type": "hallway",
+      "neighbors": [
+        {
+          "to": "F4_CORR_SW_CORNER",
+          "distance": 9.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 9.0,
+          "energy_cost": 9.0,
+          "route_points": []
+        },
+        {
+          "to": "F4_ROTONDA_SOUTH",
+          "distance": 4.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 4.0,
+          "energy_cost": 4.0,
+          "route_points": []
+        }
+      ],
+      "connector_id": null
+    },
+    "F4_ATRIUM_WEST": {
+      "label": "F4_ATRIUM_WEST",
+      "position": [
+        420,
+        360
+      ],
+      "floor": 4,
+      "accessible": true,
+      "type": "hallway",
+      "neighbors": [
+        {
+          "to": "F4_CORR_SW_CORNER",
+          "distance": 18.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 18.0,
+          "energy_cost": 18.0,
+          "route_points": []
+        },
+        {
+          "to": "F4_ROTONDA_NORTH",
+          "distance": 4.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 4.0,
+          "energy_cost": 4.0,
+          "route_points": []
+        },
+        {
+          "to": "F4_ATRIUM_CENTER",
+          "distance": 9.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 9.0,
+          "energy_cost": 9.0,
+          "route_points": []
+        }
+      ],
+      "connector_id": null
+    },
+    "F4_ROTONDA_NORTH": {
+      "label": "F4_ROTONDA_NORTH",
+      "position": [
+        390,
+        340
+      ],
+      "floor": 4,
+      "accessible": true,
+      "type": "room",
+      "neighbors": [
+        {
+          "to": "F4_ROTONDA_SOUTH",
+          "distance": 12.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 12.0,
+          "energy_cost": 12.0,
+          "route_points": []
+        },
+        {
+          "to": "F4_ATRIUM_WEST",
+          "distance": 4.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 4.0,
+          "energy_cost": 4.0,
+          "route_points": []
+        }
+      ],
+      "connector_id": null
+    },
+    "F4_ROTONDA_SOUTH": {
+      "label": "F4_ROTONDA_SOUTH",
+      "position": [
+        390,
+        220
+      ],
+      "floor": 4,
+      "accessible": true,
+      "type": "room",
+      "neighbors": [
+        {
+          "to": "F4_CORR_SOUTH_MID",
+          "distance": 4.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 4.0,
+          "energy_cost": 4.0,
+          "route_points": []
+        },
+        {
+          "to": "F4_ROTONDA_NORTH",
+          "distance": 12.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 12.0,
+          "energy_cost": 12.0,
+          "route_points": []
+        }
+      ],
+      "connector_id": null
+    },
+    "F4_ATRIUM_CENTER": {
+      "label": "F4_ATRIUM_CENTER",
+      "position": [
+        500,
+        400
+      ],
+      "floor": 4,
+      "accessible": true,
+      "type": "atrium",
+      "neighbors": [
+        {
+          "to": "F4_ATRIUM_WEST",
+          "distance": 9.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 9.0,
+          "energy_cost": 9.0,
+          "route_points": []
+        },
+        {
+          "to": "F4_STAIR_MID",
+          "distance": 9.5,
+          "accessible": false,
+          "movement_type": "stairs",
+          "travel_time": 9.5,
+          "energy_cost": 9.5,
+          "route_points": []
+        },
+        {
+          "to": "F4_CORR_DIAG_ENTRY",
+          "distance": 9.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 9.0,
+          "energy_cost": 9.0,
+          "route_points": []
+        },
+        {
+          "to": "F4_CORR_EAST_1",
+          "distance": 11.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 11.0,
+          "energy_cost": 11.0,
+          "route_points": []
+        }
+      ],
+      "connector_id": null
+    },
+    "F4_CORR_DIAG_ENTRY": {
+      "label": "F4_CORR_DIAG_ENTRY",
+      "position": [
+        560,
+        470
+      ],
+      "floor": 4,
+      "accessible": true,
+      "type": "hallway",
+      "neighbors": [
+        {
+          "to": "F4_ATRIUM_CENTER",
+          "distance": 9.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 9.0,
+          "energy_cost": 9.0,
+          "route_points": []
+        },
+        {
+          "to": "F4_CORR_DIAG_MID",
+          "distance": 12.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 12.0,
+          "energy_cost": 12.0,
+          "route_points": []
+        }
+      ],
+      "connector_id": null
+    },
+    "F4_CORR_DIAG_MID": {
+      "label": "F4_CORR_DIAG_MID",
+      "position": [
+        640,
+        560
+      ],
+      "floor": 4,
+      "accessible": true,
+      "type": "hallway",
+      "neighbors": [
+        {
+          "to": "F4_CORR_DIAG_ENTRY",
+          "distance": 12.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 12.0,
+          "energy_cost": 12.0,
+          "route_points": []
+        },
+        {
+          "to": "F4_CORR_DIAG_UPPER",
+          "distance": 23.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 23.0,
+          "energy_cost": 23.0,
+          "route_points": []
+        }
+      ],
+      "connector_id": null
+    },
+    "F4_CORR_DIAG_UPPER": {
+      "label": "F4_CORR_DIAG_UPPER",
+      "position": [
+        440,
+        680
+      ],
+      "floor": 4,
+      "accessible": true,
+      "type": "hallway",
+      "neighbors": [
+        {
+          "to": "F4_CORR_NW_MID",
+          "distance": 12.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 12.0,
+          "energy_cost": 12.0,
+          "route_points": []
+        },
+        {
+          "to": "F4_CORR_DIAG_MID",
+          "distance": 23.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 23.0,
+          "energy_cost": 23.0,
+          "route_points": []
+        }
+      ],
+      "connector_id": null
+    },
+    "F4_CORR_EAST_1": {
+      "label": "F4_CORR_EAST_1",
+      "position": [
+        610,
+        360
+      ],
+      "floor": 4,
+      "accessible": true,
+      "type": "hallway",
+      "neighbors": [
+        {
+          "to": "F4_ATRIUM_CENTER",
+          "distance": 11.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 11.0,
+          "energy_cost": 11.0,
+          "route_points": []
+        },
+        {
+          "to": "F4_ELEV_1",
+          "distance": 4.5,
+          "accessible": true,
+          "movement_type": "elevator",
+          "travel_time": 4.5,
+          "energy_cost": 4.5,
+          "route_points": []
+        },
+        {
+          "to": "F4_ELEV_2",
+          "distance": 4.5,
+          "accessible": true,
+          "movement_type": "elevator",
+          "travel_time": 4.5,
+          "energy_cost": 4.5,
+          "route_points": []
+        },
+        {
+          "to": "F4_CORR_EAST_2",
+          "distance": 14.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 14.0,
+          "energy_cost": 14.0,
+          "route_points": []
+        }
+      ],
+      "connector_id": null
+    },
+    "F4_CORR_EAST_2": {
+      "label": "F4_CORR_EAST_2",
+      "position": [
+        750,
+        360
+      ],
+      "floor": 4,
+      "accessible": true,
+      "type": "hallway",
+      "neighbors": [
+        {
+          "to": "F4_CORR_EAST_1",
+          "distance": 14.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 14.0,
+          "energy_cost": 14.0,
+          "route_points": []
+        },
+        {
+          "to": "F4_CORR_EAST_END",
+          "distance": 11.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 11.0,
+          "energy_cost": 11.0,
+          "route_points": []
+        }
+      ],
+      "connector_id": null
+    },
+    "F4_CORR_EAST_END": {
+      "label": "F4_CORR_EAST_END",
+      "position": [
+        860,
+        370
+      ],
+      "floor": 4,
+      "accessible": true,
+      "type": "hallway",
+      "neighbors": [
+        {
+          "to": "F4_CORR_EAST_2",
+          "distance": 11.0,
+          "accessible": true,
+          "movement_type": "hallway",
+          "travel_time": 11.0,
+          "energy_cost": 11.0,
+          "route_points": []
+        },
+        {
+          "to": "F4_STAIR_EAST",
+          "distance": 4.0,
+          "accessible": false,
+          "movement_type": "stairs",
+          "travel_time": 4.0,
+          "energy_cost": 4.0,
+          "route_points": []
+        }
+      ],
+      "connector_id": null
+    }
+  }
+}
